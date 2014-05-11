@@ -1,0 +1,13 @@
+extends layouts/default
+
+block main
+  .message-component
+    h1 Hello, world.
+    input(type='text', value='Hello, world')
+
+
+  pre!= renderSource('public/js/step2.js')
+
+  script(src='/js/step2.js')
+
+
