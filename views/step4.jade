@@ -1,0 +1,15 @@
+extends layouts/default
+
+block main
+  .message-component(data-initial-value='Hello, world')
+    h1
+    input(type='text')
+
+
+  pre!= renderSource('public/js/step4.js')
+
+  script(src='/js/step4.js')
+
+
+
+
